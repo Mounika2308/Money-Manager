@@ -2,11 +2,11 @@
 import './index.css'
 
 const MoneyDetails = props => {
-  const {balenceAmount, incomeAMount, expensesAMount} = props
+  const {balanceAmount, incomeAmount, expensesAmount} = props
 
   return (
     <div className="money-details-container">
-      <div className="balence-container">
+      <div className="balance-container">
         <img
           src="https://assets.ccbp.in/frontend/react-js/money-manager/balance-image.png"
           alt="balance"
@@ -15,7 +15,7 @@ const MoneyDetails = props => {
         <div>
           <p className="details-text">Your Balance</p>
           <p className="details-money" data-testid="balanceAmount">
-            Rs {balenceAmount}
+            Rs {balanceAmount}
           </p>
         </div>
       </div>
@@ -27,8 +27,8 @@ const MoneyDetails = props => {
         />
         <div>
           <p className="details-text">Your Income</p>
-          <p className="details-money" data-testid="balanceAmount">
-            Rs {incomeAMount}
+          <p className="details-money" data-testid="incomeAmount">
+            Rs {incomeAmount}
           </p>
         </div>
       </div>
@@ -39,9 +39,9 @@ const MoneyDetails = props => {
           className="details-img"
         />
         <div>
-          <p className="details-text">Your Expense</p>
-          <p className="details-money" data-testid="balanceAmount">
-            Rs {expensesAMount}
+          <p className="details-text">Your Expenses</p>
+          <p className="details-money" data-testid="expensesAmount">
+            Rs {expensesAmount}
           </p>
         </div>
       </div>

@@ -4,6 +4,7 @@
   justify-content: center;
   min-height: 100vh;
 }
+
 .responsive-container {
   width: 80%;
   max-width: 550px;
@@ -14,33 +15,59 @@
     max-width: 1140px;
   }
 }
+
 .header-container {
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  background-image: url('https://assets.ccbp.in/frontend/react-js/money-manager/money-manager-bg.png');
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url('https://res.cloudinary.com/do4qwwms8/image/upload/v1626263091/Money%20Manager/money-manager-header_rxlcrn.png');
   background-size: cover;
-  height: 142px;
+  height: 172px;
   border-radius: 16px;
   margin-top: 64px;
-  padding: 15px;
 }
+
+@media screen and (min-width: 768px) {
+  .header-container {
+    align-items: flex-start;
+    padding: 48px;
+  }
+}
+
 .heading {
   color: #475569;
   font-family: 'Roboto';
-  font-size: 25px;
+  font-size: 24px;
   font-weight: 500;
+  margin-bottom: 16px;
 }
+
+@media screen and (min-width: 768px) {
+  .heading {
+    font-size: 30px;
+  }
+}
+
 .header-content {
   color: #475569;
   font-family: 'Roboto';
-  font-size: 10px;
-  font-weight: 400;
+  font-size: 14px;
+  margin: 0px;
 }
+
+@media screen and (min-width: 768px) {
+  .header-content {
+    font-size: 18px;
+  }
+}
+
 .money-manager-text {
   color: #0b69ff;
-  font-family: 'Roboto';
+  font-weight: 500;
 }
+
 .transaction-details {
   display: flex;
   flex-direction: column;
@@ -48,6 +75,7 @@
   width: 100%;
   margin-bottom: 24px;
 }
+
 @media screen and (min-width: 768px) {
   .transaction-details {
     flex-direction: row;
@@ -68,6 +96,7 @@
   padding-left: 24px;
   padding-bottom: 32px;
 }
+
 @media screen and (min-width: 768px) {
   .transaction-form {
     width: 40%;
@@ -76,13 +105,14 @@
   }
 }
 
-.trasaction-heading {
+.transaction-header {
   color: #475569;
   font-family: 'Roboto';
   font-size: 16px;
   font-weight: 500;
   line-height: 1.6;
 }
+
 @media screen and (min-width: 768px) {
   .transaction-header {
     font-size: 20px;
@@ -129,6 +159,7 @@
   cursor: pointer;
   margin-bottom: 10px;
 }
+
 .history-transactions {
   width: 100%;
   min-height: 326px;
@@ -153,6 +184,7 @@
     margin-left: 32px;
   }
 }
+
 .transactions-table-container {
   height: 100%;
   border-radius: 8px;
